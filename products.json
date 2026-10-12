@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1001,
+        "naziv": "Logitech MX Master 3S",
+        "kategorija": "Miševi",
+        "nabavna_cena": 8500,
+        "prodajna_cena": 11990,
+        "kolicina": 12,
+        "minimalna_kolicina": 5
+    }
+]
