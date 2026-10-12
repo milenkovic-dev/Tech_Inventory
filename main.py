@@ -1,3 +1,1 @@
-#Racunarska firma projekat
-
-print("Hello World")
+print("Hello world")
