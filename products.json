@@ -7,5 +7,14 @@
         "prodajna_cena": 11990,
         "kolicina": 12,
         "minimalna_kolicina": 5
+    },
+    {
+        "id": 1002,
+        "naziv": "casio",
+        "kategorija": "Satovi",
+        "nabavna_cena": 13000.0,
+        "prodajna_cena": 17000.0,
+        "kolicina": 5,
+        "minimalna_kolicina": 1
     }
 ]

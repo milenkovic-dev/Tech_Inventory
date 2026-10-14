@@ -1,5 +1,6 @@
 #Racunarska firma projekat
 
+from functions import add_product
 
 # Pre glavnog menija, potrebno je ispisati upozorenje na nizak lager ukoliko je nizak, pa tek onda ispisati glavni meni
 # Ukoliko nema niskog lagera, upozorenje se nece ispisivati i aplikacija ce odmah prikazati gavni meni
@@ -10,7 +11,11 @@ print("Add Product           -> press 2")
 print("Sell Product          -> press 3")
 print("Product Search        -> press 4")
 print("Business Report       -> press 5")
-#print(input("Enter option: "))
+
+option = input("Enter option: ")
+
+if option == "2":
+    add_product()
 print("\n")
 
 # Svaka prodaja mora da se upise u poseban sales.txt dokument!!!
