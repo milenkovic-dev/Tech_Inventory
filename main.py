@@ -1,6 +1,7 @@
 #Racunarska firma projekat
 
 from functions import add_product
+from functions import inventory_overview
 
 # Pre glavnog menija, potrebno je ispisati upozorenje na nizak lager ukoliko je nizak, pa tek onda ispisati glavni meni
 # Ukoliko nema niskog lagera, upozorenje se nece ispisivati i aplikacija ce odmah prikazati gavni meni
@@ -14,8 +15,14 @@ print("Business Report       -> press 5")
 
 option = input("Enter option: ")
 
-if option == "2":
+if option == "1":
+    print("\nID      PROIZVOD                        KOL.          CENA")
+    print("-------------------------------------------------------------")
+    inventory_overview()
+
+elif option == "2":
     add_product()
+
 print("\n")
 
 # Svaka prodaja mora da se upise u poseban sales.txt dokument!!!
