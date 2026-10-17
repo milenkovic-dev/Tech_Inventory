@@ -2,6 +2,8 @@
 
 from functions import add_product
 from functions import inventory_overview
+from functions import sell_product
+from functions import product_search
 
 # Pre glavnog menija, potrebno je ispisati upozorenje na nizak lager ukoliko je nizak, pa tek onda ispisati glavni meni
 # Ukoliko nema niskog lagera, upozorenje se nece ispisivati i aplikacija ce odmah prikazati gavni meni
@@ -22,6 +24,12 @@ if option == "1":
 
 elif option == "2":
     add_product()
+
+elif option == "3":
+    sell_product()
+
+elif option == "4":
+    product_search()
 
 print("\n")
 
