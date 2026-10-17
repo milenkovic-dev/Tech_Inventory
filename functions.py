@@ -3,6 +3,7 @@ import json
 with open('products.json') as file:
     products = json.load(file)
 
+#Funkcija za dodavanje proizvoda na lager
 def add_product():
     with open("products.json", "r") as file:
         products = json.load(file)
@@ -37,3 +38,17 @@ def add_product():
     print(f"Proizvod '{name}' uspesno je dodat. ID: {new_id}")
 
 
+#Funkcija za pregled stanja
+def inventory_overview():
+    with open("products.json", "r") as file:
+        products = json.load(file)
+
+    for product in products:
+        cena = f"{product['prodajna_cena']:,.0f}".replace(",", ".")
+
+        print(
+            f"{product['id']:<8}"
+            f"{product['naziv']:<32}"
+            f"{product['kolicina']:<10}"
+            f"{cena:>10}"
+        )
